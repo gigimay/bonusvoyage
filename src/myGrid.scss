@@ -1,0 +1,230 @@
+/* ------------ Global Reset ------------- */
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    @include reset();
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ------------ def variables --------------- */
+
+$unit : 8px;
+
+/* -------------- Local Reset ----------------- */
+
+body {
+  line-height: 1;
+  font-size: $unit*2;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+ol, ul {
+  list-style: none; }
+
+a, a:hover{
+    text-decoration: none;
+}
+
+/* ------------------------------------------ */
+/* ------------ Responsiveness ---------------*/
+/* ------------------------------------------ */
+
+
+// Container
+
+.container {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+}
+@media only screen and (min-width: 720px) {
+    .container {
+        width: 90%;
+    }
+
+}
+@media only screen and (min-width: 960px) {
+    .container {
+        width: 80%;
+    }
+
+}
+
+// Grid system
+
+@media only screen and (max-width: 480px) {
+    $columns: 12;
+    $column-width: 100 / $columns;
+    @while $columns > 0 {
+        .mob-#{$columns} {
+            width: $column-width * $columns + %;
+        }
+        $columns: $columns - 1;
+    }
+}
+@media only screen and (min-width: 720px) {
+    $columns: 12;
+    $column-width: 100 / $columns;
+    @while $columns > 0 {
+        .tab-#{$columns} {
+            width: $column-width * $columns + %;
+        }
+        $columns: $columns - 1;
+    }
+}
+@media only screen and (min-width: 960px) {
+    $columns: 12;
+    $column-width: 100 / $columns;
+    @while $columns > 0 {
+        .desk-#{$columns} {
+            width: $column-width * $columns + %;
+        }
+        $columns: $columns - 1;
+    }
+}
+
+//suppr element
+
+@media screen and (max-width: 480px){
+    .not_mob {
+        display : none;
+    }
+}
+@media only screen and (min-width: 720px) {
+    .not_tab {
+        display : none;
+    }
+}
+@media only screen and (min-width: 960px) {
+    .not_desk {
+        display : none;
+    }
+}
+
+/* ------------ Class --------------- */
+
+//Background image
+.back-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+//Button style-none
+.btn-none {
+    background : none;
+    border     : 2px solid transparent;
+    outline    : none;
+}
+
+// Color class
+  .red {
+    background-color : red;
+  }
+  .blue {
+    background-color : blue;
+  }
+  .green {
+    background-color : green;
+  }
+
+// Containers and wrappers
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Flexbox and Positioning
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-center {
+    display: flex;
+    align-items: center;
+}
+
+.jc-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}

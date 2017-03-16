@@ -1,0 +1,107 @@
+.grand-container{
+  background-color: rgb(2,119,189);
+}
+
+// .container{
+//   background-color: rgb(2,119,189);
+//   color: white;
+// }
+
+.Footer{
+  align-items: center;
+  justify-content: space-around;
+  border-bottom-style: solid;
+  border-bottom: 1px solid white;
+  max-width: 100%;
+
+  a:hover{
+    background-color: rgb(18,138,210);
+  }
+  .over{
+    a:hover{
+      background-color: #fd8201;
+    }
+  }
+  .List a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+      img{
+    width: 50px;
+    height: 50px;
+  }
+}
+}
+
+
+
+.information{
+  display: flex;
+  margin-top: 20px;
+  border-bottom: 1px solid white;
+
+  .infocontent{
+    border-right: 1px solid white;
+    margin-right: 15px;
+    color: white;
+    p{
+      margin: 0 0 10px 0;
+      a{
+        color: white;
+      }
+    }
+    h2{
+      font-weight: bold;
+      font-family: 'Oswald', Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.security-payment{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+
+  .security{
+    border-right: 1px solid white;
+
+    .cover-security{
+      display: flex;
+      justify-content: space-around;
+      img{
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .payment{
+    .cover-payment{
+      display: flex;
+      justify-content: space-around;
+      img{
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.paragraphe-p{
+  border-top: 1px solid white;
+  color: white;
+  p{
+    margin-top: 30px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+
+// ********* scrollbutton***********
