@@ -57,8 +57,7 @@ class Formulaire extends Component{
 
               </div>
 
-              <div className="mes-info-deux">
-                <div className="mes-info-container">
+                <div className="mes-info-deux">
                   <div className="telephone">
                     <p>Télèphone <sup>*</sup></p>
                     <input type="text"/>
@@ -76,6 +75,17 @@ class Formulaire extends Component{
               <label for="test">Test element used to proof </label>
               <label for="test">Test element used to proof </label>
 
+              <h1>Je choisis mon agence favorite</h1>
+              <div className="rig-dep-vil">
+                <div className="valise-tout">
+                  <input type="text" placeholder="Regions"/>
+                </div>
+                <div className="valise-tout">
+                  <input type="text" placeholder="Departements"/>
+                </div>
+                <div className="valise-tout">
+                  <input type="text" placeholder="Villes"/>
+                </div>
               </div>
             </div>
          </div>
