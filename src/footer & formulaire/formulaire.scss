@@ -1,0 +1,127 @@
+
+.valise-container{
+  background-color: rgb(230,231,232);
+  .container-formulaire{
+    background-color: rgb(230,231,232);
+    h1{
+      font-family: 'Oswald', Arial, Helvetica, sans-serif;
+      font-size: 21px;
+      font-weight: bold;
+      color: #0277bd;
+      line-height: 32px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+
+    }
+
+      .main-input{
+        background-color: rgb(255,255,255);
+        input{
+          height: 35px;
+          line-height: 40px;
+          font-size: 13px;
+          font-weight: 500;
+          font-style: italic;
+          width: 200px;
+          margin-left:20px;
+          margin-bottom: 20px;
+        }
+        .input-identifiant{
+          h1{
+            margin-left: 20px;
+          }
+          p{
+            margin-left: 20px;
+          }
+        }
+        .input-mot-de-passe{
+          display: flex;
+          p{
+            margin-left: 20px;
+          }
+        }
+
+      }
+
+    .inf-perso{
+      h1{
+        margin-left: 20px;
+      }
+      p{
+        margin-left: 20px;
+      }
+      .mes-info{
+        display: flex;
+        .civility{
+          margin-left: 20px;
+          // height: 35px; le tie de height ne marche pas
+          width: 100px;
+          border-radius: none;
+        }
+        input{
+          height: 35px;
+          line-height: 40px;
+          font-size: 13px;
+          font-weight: 500;
+          font-style: italic;
+          width: 200px;
+          margin-left:20px;
+          margin-bottom: 20px;
+        }
+      }
+      .mes-info-deux{
+        display: flex;
+        input{
+          height: 35px;
+          line-height: 40px;
+          font-size: 13px;
+          font-weight: 500;
+          font-style: italic;
+          width: 200px;
+          margin-left:20px;
+          margin-bottom: 20px;
+        }
+      }
+      .rig-dep-vil{
+        display: flex;
+        input{
+          height: 35px;
+          line-height: 40px;
+          font-size: 13px;
+          font-weight: 500;
+          font-style: italic;
+          width: 200px;
+          margin-left:20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+  }
+}
+
+.inf-perso{
+  background-color: rgb(255,255,255);
+  margin-top: 20px;
+    .titre{
+      .civility{
+        height: 40px;
+      }
+    }
+  .date-de-naissance{
+    margin-left: 20px;
+    .select{
+      margin-left: 2px;
+      height: 41px;
+    }
+  }
+  .checkbox{
+    margin-left: 20px;
+  }
+  .valise-tout{
+    button{
+      height: 41px;
+      margin-left: 10px
+    }
+  }
+}

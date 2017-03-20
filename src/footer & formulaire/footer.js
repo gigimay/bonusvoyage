@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import ScrollUpButton from "react-scroll-up-button";
-import location from '../photos/location.png';
-import africavoyages from '../photos/africavoyages.png';
-import group from '../photos/group.jpeg';
-import plane from '../photos/plane.svg';
-import hotel from '../photos/hotel.png';
-import building from '../photos/building.jpeg';
-import './myGrid.min.css';
+import location from '../../photos/location.png';
+import africavoyages from '../../photos/africavoyages.png';
+import group from '../../photos/group.jpeg';
+import plane from '../../photos/plane.svg';
+import hotel from '../../photos/hotel.png';
+import building from '../../photos/building.jpeg';
+import '../myGrid.min.css';
 import './footer.min.css';
 
 class Footer extends Component {
@@ -106,7 +106,7 @@ class Footer extends Component {
                 </div>
               </div>
 
-              <div className="payment desk-6 mob-8">
+              <div className="payment desk-6 mob-12">
                 <h1>MODES DE PAIEMENT ACCEPTÉS</h1>
                 <div className="cover-payment">
                   <img src={plane} alt=""/>
